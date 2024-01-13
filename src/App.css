@@ -1,0 +1,66 @@
+#root {
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+.uLine {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.uLine::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0; /* Changed right to left */
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255); /* Changed border-bottom to background-color */
+  transition: all 0.2s linear;
+}
+
+.uLine:hover::after {
+  width: 100%;
+}
+
+.uLine2 {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: cyan;
+  text-decoration: none;
+}
+
+.uLine2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0; /* Changed right to left */
+  width: 0;
+  height: 2px;
+  background-color: cyan; /* Changed border-bottom to background-color */
+  transition: all 0.2s linear;
+}
+
+.uLine2:hover::after {
+  width: 100%;
+}
+
+input[type=number]::webkit-inner-spin-button,
+input[type=number]::webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
